@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #141414;
+}
+
+main {
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+  color: inherit;
+}
+
+.container-box,
+.profile-details-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 345px;
+  box-shadow: 0px 0px 20px 0px rgba(256, 256, 256, 0.2);
+}
+
+.profile-details-section .profile-image {
+  border-radius: 50%;
+  width: 90px;
+  margin-bottom: 1rem;
+}
+
+.profile-details-section .username {
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+.profile-details-section .user-location {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #acc663;
+}
+
+.profile-details-section .user-desc {
+  color: #808080;
+  margin-bottom: 1rem;
+}
+
+.list-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.list-links a {
+  height: 100%;
+  width: 100%;
+  background-color: #333333;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.list-links a:hover {
+  background-color: #acc663;
+  color: #141414;
+}
+
+@media (min-width: 360px) {
+  .container-box {
+    min-width: 384px;
+  }
+}
