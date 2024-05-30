@@ -23,8 +23,12 @@ body {
   padding: 1.5rem;
   border-radius: 20px;
   box-shadow: 10px 10px;
+  transition: all 0.3s ease-out;
 }
 
+.card-container:hover {
+  box-shadow: 20px 20px;
+}
 .card-container img {
   border-radius: 10px;
   margin-bottom: 20px;
@@ -48,6 +52,11 @@ body {
 .card-container h2 {
   margin: 12px 0px;
   font-weight: 800;
+}
+
+.card-container h2:hover {
+  color: #f4d04e;
+  cursor: pointer;
 }
 
 .card-container .desc {
