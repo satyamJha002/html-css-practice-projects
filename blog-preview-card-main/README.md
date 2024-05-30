@@ -3,7 +3,7 @@
 ![Design preview for the Blog preview card coding challenge](./design/desktop-preview.jpg)
 
 # Live Project Demo - Blog preview card
-[Blog card](https://card-blog-pre-12.netlify.app/)
+[Blog card](https://card-blog-prev-12.netlify.app/)
 
 ## Welcome! 👋
 
