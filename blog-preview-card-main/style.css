@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4d04e;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  background-color: #fff;
+  max-width: 384px;
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 10px 10px;
+}
+
+.card-container img {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-container .learning {
+  background-color: #f4d04e;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.card-container .publishing {
+  margin: 12px 0px;
+  font-weight: normal;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.card-container h2 {
+  margin: 12px 0px;
+  font-weight: 800;
+}
+
+.card-container .desc {
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin-bottom: 24px;
+  color: grey;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile img {
+  width: 50px;
+}
+
+.profile .name {
+  padding: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    max-width: 400px;
+  }
+}
