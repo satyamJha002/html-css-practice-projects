@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(218, 23%, 16%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Manrope", sans-serif;
+}
+
+.card {
+  background-color: hsl(217, 19%, 24%);
+  max-width: 537px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card .advice-id {
+  color: hsl(150, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.card .text-div {
+  margin-bottom: 30px;
+}
+
+.text-div .advice-text {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.pause-icon {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.pause-bar {
+  background-color: white;
+  width: 2px;
+  height: 20px;
+}
+
+.card .dice-icon {
+  background-color: #0ceb98;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.card .dice-icon:hover {
+  box-shadow: 0px 1px 10px hsl(150, 100%, 66%);
+}
+
+.card .dice-icon img {
+  padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .pause-icon img {
+    max-width: 537px;
+    width: 100%;
+  }
+}
