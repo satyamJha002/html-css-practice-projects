@@ -2,6 +2,9 @@
 
 ![Design preview for the FAQ accordion coding challenge](./design/desktop-preview.jpg)
 
+# Live Project Demo
+[FAQ accordion](https://faq-accordian-main.netlify.app/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
