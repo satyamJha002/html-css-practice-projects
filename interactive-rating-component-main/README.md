@@ -2,6 +2,9 @@
 
 ![Design preview for the Interactive rating component coding challenge](./design/desktop-preview.jpg)
 
+# Live Demo Project:
+[Rating feedback](https://rating-feedback.netlify.app/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
