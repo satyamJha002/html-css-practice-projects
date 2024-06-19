@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: hsl(235, 18%, 26%);
+}
+
+.signup-container {
+  display: flex;
+  gap: 30px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.notification-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  max-width: 400px;
+}
+
+.notification-container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: hsl(234, 29%, 20%);
+}
+
+.notification-container .para-1 {
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.notification-container .list-info {
+  margin-bottom: 2rem;
+}
+
+.notification-container .list-info p {
+  display: flex;
+  gap: 10px;
+  padding: 0.4rem 0;
+}
+
+.notification-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.notification-container form .two-labels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.notification-container form .valid-email {
+  color: tomato;
+  font-size: 1rem;
+}
+
+.notification-container form .email {
+  font-size: 18px;
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+
+.notification-container form .email-valid {
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid hsl(231, 7%, 60%);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.notification-container form .email-valid::placeholder {
+  color: hsl(231, 7%, 60%);
+}
+
+.notification-container form .email-valid.email-error {
+  color: red;
+  background-color: rgba(255, 0, 0, 0.2);
+  border-color: red;
+}
+
+.notification-container .subscribe-btn {
+  padding: 1rem;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.notification-container .subscribe-btn:hover {
+  background: linear-gradient(to right, #e66465 50%, #ff6347);
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Thank you message card */
+
+.thankyou-message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 2rem 3rem;
+  max-width: 400px;
+  border-radius: 2rem;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.thankyou-message-container img {
+  width: 40px;
+  margin-bottom: 2rem;
+}
+
+.thankyou-message-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: hsl(234, 29%, 20%);
+}
+
+.thankyou-message-container p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.email-id {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+
+.thankyou-message-container .dismiss-btn {
+  padding: 1rem;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.thankyou-message-container .dismiss-btn:hover {
+  background: linear-gradient(to right, #e66465 50%, #ff6347);
+  box-shadow: 0px 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .signup-container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .signup-container .signup-illustration img {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .thankyou-message-container {
+    height: 100vh;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
