@@ -2,6 +2,9 @@
 
 ![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
 
+# Live demo project
+[Profile card](https://profile-card-vector.netlify.app/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
