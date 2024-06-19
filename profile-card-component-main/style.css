@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap");
+
+:root {
+  --clr-dark-cyan: hsl(185, 75%, 39%);
+  --clr-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --clr-dark-grayish-blue: hsl(227, 10%, 46%);
+  --clr-dark-gray: hsl(0, 0%, 59%);
+}
+
+/** CSS Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/** End CSS Reset */
+
+body {
+  background-color: var(--clr-dark-cyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1.5rem;
+  min-width: 30rem;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+  color: var(--clr-dark-desaturated-blue);
+}
+
+.bg-pattern-top,
+.bg-pattern-bottom {
+  position: absolute;
+  z-index: -1;
+}
+
+.bg-pattern-top {
+  top: -130%;
+  left: -30%;
+}
+.bg-pattern-bottom {
+  bottom: -130%;
+  right: -40%;
+}
+
+.top {
+  height: 10rem;
+}
+
+.middle {
+  font-family: "Kumbh Sans";
+  margin: 0 auto;
+  text-align: center;
+  margin-top: -1rem;
+
+  & .pic {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: 0.5rem solid #fff;
+    margin-bottom: 1.3rem;
+  }
+
+  & .title {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  & .age {
+    font-weight: 400;
+    color: var(--clr-dark-gray);
+  }
+
+  & .location {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--clr-dark-gray);
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  border-top: 0.1rem solid #c4c4c4;
+  margin-top: 3rem;
+  gap: 1rem;
+
+  & .state {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 2.3rem;
+  }
+
+  & .numbers {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  & .state-type {
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    color: var(--clr-dark-gray);
+  }
+}
