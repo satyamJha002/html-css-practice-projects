@@ -2,6 +2,9 @@
 
 ![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)
 
+# Live Demo Project
+[Newsletter signup form](https://newsletter-subscribe-signup.netlify.app/)
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
